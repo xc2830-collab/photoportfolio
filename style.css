@@ -805,3 +805,42 @@ footer {
         margin-top: 64px;
     }
 }
+
+.project-navigation {
+    max-width: 1280px;
+    margin: 100px auto 0;
+    padding-top: 32px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-navigation a {
+    color: #666;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-navigation a:hover {
+    color: #111;
+}
+
+.project-navigation a:last-child:hover {
+    transform: translateX(6px);
+}
+
+.project-navigation a:first-child:hover {
+    transform: translateX(-6px);
+}
+
+@media (max-width: 800px) {
+    .project-navigation {
+        flex-direction: column;
+        margin-top: 64px;
+        padding-top: 28px;
+        gap: 18px;
+    }
+}
